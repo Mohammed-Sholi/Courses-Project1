@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #F7F7F8;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+p{
+    font-size: 17px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* start header */
+header .container{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    background-color: #FF9500;
+    border-radius: 8px;
+    margin-right: 25px;
+    padding: 2px 1px;
+}
+header .container nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+}
+header .container nav .active{
+    border-radius: 8px;
+    background: var(--white-95, #F1F1F3);
+    padding: 10px;
+}
+
+header .container nav a{
+    display: block;
+    color: #262626;
+}
+header .container .auth {
+    display: flex;
+    gap: 10px;
+}
+header .container .auth a{
+    display: block;
+    padding: 14px 19px;
+    color: #262626;
+}
+header .container .auth .login{
+    background-color:#FF9500;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .burgur{
+    display: none;
+}
+/* end header */
+
+/* start hero */
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.hero .container .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 11px;
+    border: 1px solid #F1F1F3;
+    background: #FCFCFD;
+    padding: 10px;
+}
+.hero .container .title .icon{
+    display: flex;
+    align-items: center;
+    background-color:#FFF4E5;
+    padding: 2px;
+    border-radius: 6px;
+}
+.hero .container p:first-of-type{
+    margin-top: 15px;
+    font-size: 22px;
+}
+.hero .container p:last-of-type{
+    margin-top: 10px;
+}
+.hero .container .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.hero .container .links .one{
+    background-color: #FF9500;
+    border-radius: 8px;
+    color: white;
+    padding: 17px 20px;
+}
+.hero .container .links .two{
+    background-color: white;
+    border-radius: 8px;
+    color:#262626;
+    padding: 17px 20px;
+}
+.hero .container .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-top: 70px;
+    width: 100%;
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.hero .heroimg{
+    margin-top: 60px;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+}
+.hero .heroimg img{
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    background-color: red;
+}
+.hero .heroimg svg{
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.20);
+    width: 50px;
+    height: 50px;
+    padding-left: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* end hero */
+
+/* start benefits */
+.benefits .container h2{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 30px;
+    margin-top: 60px;
+}
+.benefits .container .description{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #262626;
+
+}
+.benefits .container .description p{
+    width: 70%;
+}
+.benefits .container .description button{
+    border-radius: 8px;
+    padding: 14px 23px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: white;
+    border: none;
+}
+.benefits .container .benefits-items{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container .benefits-items .item1{
+    background-color: white;
+    width: calc((100% - 20px) /3);
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+}
+.container .benefits-items .item1 h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.container .benefits-items .item1 p{
+    margin-top: 15px;
+}
+.container .benefits-items .item1 .svg{
+    height: 55px;
+    margin-top: 15px;
+    text-align: right;
+}
+.container .benefits-items .item1 svg{
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: content-box;
+    border: 1px solid #F1F1F3;
+    background: #FCFCFD;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+/* end benefits */
+
+/* start courses */
+.courses .container h2{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 30px;
+    margin-top: 80px;
+}
+.courses .container .description{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #262626;
+
+}
+.courses .container .description p{
+    width: 70%;
+}
+.courses .container .description button{
+    border-radius: 8px;
+    padding: 14px 23px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: white;
+    border: none;
+}
+.courses .container .courses-items {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.courses .container .courses-items .item1{
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #F1F1F3;
+    background: #FFF;
+    width: calc((100% - 10px)/2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.courses .container .courses-items .item1 img{
+    border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 500 / 270;
+}
+.courses .container .courses-items .item1 .item-description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.courses .container .courses-items .item1 .item-description .row{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.courses .container .courses-items .item1 .item-description .row div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.courses .courses-items .item1 .item-description .row div p{
+    border-radius: 6px;
+    border: 1px solid  #F1F1F3;
+    background: #FFF;
+}
+.courses .container .courses-items .item1 .item-description h3{
+    font-size: 16px;
+}
+.courses .container .courses-items .item1 .item-description p{
+    color: #262626;
+}
+.courses .container .courses-items .item1 .item-description a{
+    display: block;
+    color:#262626;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background:  #F7F7F8;
+}
+/* end courses */
+/* start testimonals */
+.testimonals h2{
+    margin-top: 70px;
+}
+.testimonals .container .description{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #262626;
+
+}
+.testimonals .container .description p{
+    width: 70%;
+}
+.testimonals .container .description button{
+    border-radius: 8px;
+    padding: 14px 23px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: white;
+    border: none;
+}
+.testimonals .description{
+    margin-bottom: 50px;
+}
+.testimonals .testimonals-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.testimonals .testimonals-items .item1{
+    border-radius: 10px;
+    width: calc((100% - 20px)/2);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    gap: 50px;
+}
+.testimonals .testimonals-items .item1 .person1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.testimonals .testimonals-items .item1 .person1 .name{
+    flex-grow: 1;
+}
+.testimonals .testimonals-items .item1 .person1 a{
+    border-radius: 8px;
+    border: 1px solid #F1F1F3; 
+    background:  #F7F7F8;
+    padding: 8px 11px;
+    color: #262626;
+
+}
+.testimonals .testimonals-items .item1 .person1 img{
+    width: 60px;
+    border-radius: 6px;
+    display: block;
+}
+/* end testimonals */
+/* start pricing */
+.pricing h2{
+    margin-top: 70px;
+}
+.pricing .container .description{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    color: #262626;
+
+}
+.pricing .container .description p{
+    width: 70%;
+}
+.pricing .container .description .package-time{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #FFF;
+}
+.pricing .container .description button{
+    border-radius: 8px;
+    padding: 14px 23px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: white;
+    border: none;
+}
+.pricing .container .description button:first-of-type{
+    border-radius: 6px;
+    color: white;
+    background: #FF9500;
+}
+.pricing .description{
+    margin-bottom: 50px;
+}
+.pricing .packages{
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pricing .package1{
+    padding: 40px 20px;
+    background-color: #FFF;
+    text-align: center;
+    width: calc((100% - 20px)/2);
+    border-radius: 12px;
+    border: 1px solid  #F1F1F3;
+    background:  #FCFCFD;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.pricing .package1 .title{
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: 1px solid #FFEACC;
+    background: #FFF9F0;
+}
+.pricing .package1 .price{
+    display: flex;
+    justify-content: center;
+
+}
+.pricing .package1 .price p:first-of-type{
+    font-size: 50px;
+    font-weight: 800;
+}
+.pricing .package1 .price p:last-of-type{
+    align-self: flex-end;
+}
+.pricing .package1 .features{
+    border-radius: 14px 14px 0px 0px;
+    border: 1px solid #F1F1F3;
+    background: #fff;
+}
+.pricing .package1 .features .features-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+    padding: 30px;
+ 
+}
+.pricing .package1 .features .features-container p:first-child{
+    font-weight: 600;
+}
+.pricing .package1 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pricing .package1 ul li{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    padding: 14px;
+}
+.pricing .package1 ul li svg{
+    padding: 6px;
+    border-radius: 6px;
+    background: #FFF4E5;
+    width: 30px;
+    height: 30px;
+}
+#not-in-features{
+    width: 31px;
+    height: 31px;
+    background-color: white ;
+    border-radius: 6px;
+    border: 1px solid var(--White-95, #F1F1F3);
+}
+.pricing .package1 a{
+padding: 20px 24px;
+display: block;
+gap: 8px;
+color: white;
+border-radius: 0px 0px 8px 8px;
+background: var(--Orange-50, #FF9500);
+}
+/* end pricing */
+
+/* start footer */
+footer{
+    margin-top: 70px;
+    background-color: white;
+}
+footer .container{
+    padding-top:50px ;
+    padding-bottom:50px ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 0;
+}
+footer .start-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 40%;
+}
+footer .start-footer .logo{
+    background-color: #FF9500;
+    width: fit-content;
+    border-radius: 8px;
+    margin-right: 25px;
+    padding: 2px 2px;
+    display: flex; /*عشان نحول من انلاين الي بتضيف تحتيها مسافة بتاثر ع الشكل*/
+} 
+footer .start-footer .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .start-footer .contact .social{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+footer .end-footer {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px 0;
+}
+footer .end-footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li:first-child{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+footer .end-footer .row{
+    display: flex;
+    gap: 12px;
+}
+footer .end-footer .row svg{
+    box-sizing: content-box;
+    padding: 7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background:  #F7F7F8;
+}
+/* end footer */
+
+/* start media */
+@media (max-width: 768px) {
+    header .container nav{
+        display: none ;
+    }
+    header .container .burgur{
+        display: block;
+    }
+    header .container{
+        justify-content: space-between;
+    }
+    .benefits .container .description{
+        gap: 15px 0;
+    }
+    .benefits .container .description p{
+        width: 100%;
+    }
+    .benefits .container .benefits-items{
+        flex-direction: column;
+    }
+    .courses .container .description {
+        gap: 15px 0;
+
+    }
+    .courses .container .description p{
+        width: 100%;
+    }
+    .container .benefits-items .item1{
+        width: 100%;
+    }
+    .courses .container .courses-items .item1{
+        width: 100%;
+    }
+    .testimonals .container .description{
+        gap: 15px 0;
+    }
+    .testimonals .container .description p{
+        width: 100%;
+    }
+    .testimonals .testimonals-items .item1{
+        width: 100%;
+    }
+    .pricing .container .description{
+        gap: 15px 0;
+    }
+    .pricing .container .description p{
+        width: 100%;
+    }
+    .pricing .description .package-time{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pricing .package1{
+        width: 100%;
+    }
+    footer .start-footer{
+        width: 100%;
+    }
+    .hero .container .icons svg:nth-child(n+4) {
+        display: none;
+    }
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 980px;
+    }
+  }
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container {
+      width: 1350px;
+    }
+  }
+/* end media */
